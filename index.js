@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+const cors = require('cors');
+
+app.use(cors());
+
 var reader = require('./file_manager/reader.js');
 var counter_tags = require('./counter_tags/counter_tags.js');
 
